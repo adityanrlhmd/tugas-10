@@ -1,0 +1,87 @@
+.rekomendasi {
+    width: 100%;
+    position: relative;
+    margin-bottom: 200px;
+
+    .title-nav-rekomendasi {
+        margin-left: 60px;
+
+        .title-rekomendasi {
+            @include tittle;
+            font-size: 40px;
+        }
+
+        .bar-rekomendasi {
+            width: 100%;
+            @include flex();
+
+            ul {
+                list-style-type: none;
+                margin-top: -30px;
+                padding: 0;
+                overflow: hidden;
+
+                li {
+                    list-style-type: none;
+                    margin-right: 20px;
+
+                    a {
+                        display: inline-block;
+                        font-size: 19px;
+                        font-weight: 700;
+                        text-decoration: none;
+                        color: $nav-color;
+                        text-align: center;
+                        padding: 14px 16px;
+                        letter-spacing: 1px;
+
+                        &:hover {
+                            color: #5656c2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .transparent-left {
+        height: 473px;
+        width: 10%;
+        margin-top: -458px;
+        padding: 40px;
+        position: absolute;
+        background-image: linear-gradient(to right, #ffffffd7, rgba(255, 255, 255, 0));
+        z-index: 1;
+    }
+
+    .transparent-right {
+        height: 473px;
+        width: 10%;
+        margin-top: -458px;
+        margin-left: 90%;
+        padding: 40px;
+        position: absolute;
+        background-image: linear-gradient(to left, #ffffffd7, rgba(255, 255, 255, 0));
+        z-index: 1;
+    }
+}
+
+.movie-rekomendasi {
+    width: 100%;
+    margin-bottom: -15px;
+    background-color: #f0f0f0;
+
+    .owl-carousel {
+        img {
+            width: 500px;
+            margin-bottom: 20px;
+        }
+
+        .item {
+            padding: 25px;
+            background-color: #f0f0f0;
+            font-weight: 900;
+            font-size: 20px;
+        }
+    }
+}

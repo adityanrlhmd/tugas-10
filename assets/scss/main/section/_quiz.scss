@@ -1,0 +1,62 @@
+.quiz {
+    width: 100%;
+    position: relative;
+    margin-top: 240px;
+    margin-bottom: 120px;
+
+    .tittle-quiz {
+        text-align: center;
+        @include tittle;
+        font-size: 40px;
+    }
+
+    .kotak-quiz {
+        width: 800px;
+        margin: 0 auto;
+        background: $primary-color;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        padding: 20px;
+        margin-top: 20px;
+        z-index: 1;
+
+        .isi-kotak-quiz {
+            width: 640px;
+            margin: 20px 60px;
+            background: #f7f5f5;
+            border: 1px solid #ddd7d7;
+            border-radius: 5px;
+            padding: 40px;
+            z-index: 1;
+            height: 120px;
+
+            a {
+                text-decoration: none;
+                outline: none;
+                color: inherit;
+                width: 180px;
+                color: #fff;
+                display: inline-block;
+                font-size: 18px;
+                font-weight: 500;
+                text-align: center;
+                padding: 10px 40px;
+                margin-left: 400px;
+                margin-top: 23px;
+                border: none;
+                border-radius: 5px;
+                background: #63aad7;
+                background: -moz-linear-gradient(left, #63aad7 1%, #125f97 100%);
+                background: $linear-color;
+            }
+
+            p {
+                font-size: 20px;
+                font: bold;
+                font-weight: 550;
+                margin-top: -10px;
+            }
+        }
+
+    }
+}

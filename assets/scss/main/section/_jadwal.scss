@@ -1,0 +1,118 @@
+.jadwal {
+    width: 100%;
+    position: relative;
+    margin-bottom: 100px;
+
+    .title-jadwal {
+        text-align: center;
+        @include tittle;
+        font-size: 40px;
+    }
+
+    .isi-jadwal {
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+        display: flex;
+
+        .kiri {
+            width: 50%;
+            margin-left: 70px;
+            position: relative;
+            display: flex;
+            align-items: center;
+
+            img {
+                width: 270px;
+                border-radius: 8px;
+            }
+
+            .box-kiri {
+                width: 400px;
+                padding: 30px;
+                color: #fff;
+                text-align: justify;
+                background: linear-gradient(to bottom, #ee5e6d 1%, #f3a1a1 100%);
+                line-height: 150%;
+                border-top-right-radius: 8px;
+                border-bottom-right-radius: 8px;
+            }
+        }
+
+        .kanan {
+            width: 33%;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            margin-left: 75px;
+            background-color: $primary-color;
+
+            h3 {
+                font-family: sans-serif;
+                margin: 0;
+                padding-top: 10px;
+                height: 45px;
+                color: $primary-color;
+                background: #63aad7;
+                background: -moz-linear-gradient(left, #63aad7 1%, #125f97 100%);
+                background: linear-gradient(to left, #63aad7 1%, #125f97 100%);
+                border-top-right-radius: 10px;
+                border-top-left-radius: 10px;
+
+                span {
+                    font-family: 'Metropolis';
+                    margin-left: 12%;
+                    position: absolute;
+                    height: 100%;
+
+                    a {
+                        text-decoration: none;
+                        color: $primary-color;
+                    }
+                }
+            }
+
+            .list-kanan {
+                height: 400px;
+                overflow: auto;
+
+                p {
+                    list-style-type: none;
+                    width: 95%;
+                    margin-bottom: 10px;
+                    margin-left: 10px;
+                    padding: 15px;
+                    padding-left: 15px;
+                    border: 0.1px solid #6b6666;
+                    border-radius: 5px;
+
+                    #garis {
+                        background: $secondary-color;
+                        width: 17px;
+                        height: 1px;
+                        margin-right: 5px;
+                    }
+
+                    span {
+                        display: inline-block;
+                        vertical-align: middle;
+                        color: $secondary-color;
+                    }
+                }
+            }
+
+        }
+    }
+
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: rgba(102, 102, 102, 0);
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: rgba(102, 102, 102, 0.658);
+        border-radius: 10px;
+    }
+}

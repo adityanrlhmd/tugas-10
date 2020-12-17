@@ -1,0 +1,15 @@
+main {
+    background: url("../image/pawel-czerwinski-OG44d93iNJk-unsplash.jpg");
+    height: 100%;
+    background-position: -400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@import 'section/gambar';
+@import 'section/jadwal';
+@import 'section/rekomendasi';
+@import 'section/news';
+@import 'section/galeri';
+@import 'section/quiz';
+@import 'section/peta';
