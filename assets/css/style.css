@@ -627,28 +627,38 @@ main {
   font-size: 40px;
 }
 
-.galeri .list-galeri .atas-list-galeri {
-  margin-bottom: 1px;
-  margin-left: 50px;
+.galeri .list-galeri {
+  margin-bottom: 40px;
+}
+
+.galeri .list-galeri .galeri-list-atas {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0 50px;
 }
 
-.galeri .list-galeri .atas-list-galeri img {
+.galeri .list-galeri .galeri-list-atas img {
   margin-right: 1px;
 }
 
-.galeri .list-galeri .bawah-list-galeri {
+.galeri .list-galeri .galeri-list-atas-isi {
+  margin: 0 auto;
+}
+
+.galeri .list-galeri .galeri-list-bawah {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 50px;
-  margin-bottom: 30px;
+  margin: 0 50px;
 }
 
-.galeri .list-galeri .bawah-list-galeri img {
+.galeri .list-galeri .galeri-list-bawah img {
   margin-right: 1px;
+}
+
+.galeri .list-galeri .galeri-list-bawah-isi {
+  margin: 0 auto;
 }
 
 .galeri .list-galeri a {
@@ -799,7 +809,7 @@ main {
   color: #fff;
   display: inline-block;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 200;
   text-align: center;
   padding: 10px 40px;
   margin-left: 400px;
@@ -823,6 +833,7 @@ main {
 }
 
 .peta .banner-peta {
+  overflow: hidden;
   border-top: 2px solid #5656c2;
   height: 100%;
   width: 100%;
@@ -837,7 +848,7 @@ main {
 
 .peta .banner-peta .mapouter {
   height: 722px;
-  width: 1000px;
+  width: 100%;
 }
 
 .peta .banner-peta .mapouter .gmap_canvas {
@@ -851,7 +862,7 @@ main {
   -webkit-box-shadow: 0 16px 16px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 16px 16px 0 rgba(0, 0, 0, 0.2);
   border-radius: 5px;
-  margin-top: -30px;
+  margin-top: -100px;
   margin-left: 60px;
   position: absolute;
   z-index: 10;

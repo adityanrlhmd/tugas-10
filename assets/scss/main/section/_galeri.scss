@@ -9,23 +9,47 @@
     }
 
     .list-galeri {
-        .atas-list-galeri {
-            margin-bottom: 1px;
-            margin-left: 50px;
+        margin-bottom: 40px;
+
+        .galeri-list-atas {
             display: flex;
+            margin: 0 50px;
 
             img {
                 margin-right: 1px;
             }
+
+            &-isi {
+                margin: 0 auto;
+
+                &-kiri {
+                    &-tengah {}
+                }
+
+                &-kanan {
+                    &-tengah {}
+                }
+            }
         }
 
-        .bawah-list-galeri {
+        .galeri-list-bawah {
             display: flex;
-            margin-left: 50px;
-            margin-bottom: 30px;
+            margin: 0 50px;
 
             img {
                 margin-right: 1px;
+            }
+
+            &-isi {
+                margin: 0 auto;
+
+                &-kiri {
+                    &-tengah {}
+                }
+
+                &-kanan {
+                    &-tengah {}
+                }
             }
         }
 
